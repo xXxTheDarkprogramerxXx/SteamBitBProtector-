@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access Checker</title>
+    <style>
+        body {
+            min-width: 300px;
+            font-family: Arial, sans-serif;
+            padding: 15px;
+        }
+        h5 { text-align: center; }
+        label { display: flex; align-items: center; margin-bottom: 10px; }
+        input[type="checkbox"] { margin-right: 10px; }
+        button { margin-top: 10px; width: 100%; padding: 10px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h5>🔒 Secure Access Checker</h5>
+
+    <label><input type="checkbox" id="iframeDetection"> Enable iframe attack detection</label>
+    <label><input type="checkbox" id="bitbDetection"> Enable BitB div attack detection (experimental)</label>
+
+    <button id="checkNow">Scan Current Page</button>
+
+    <!-- ✅ move JS to external file -->
+    <script src="popup.js"></script>
+</body>
+</html>
